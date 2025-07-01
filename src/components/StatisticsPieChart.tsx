@@ -2,10 +2,10 @@ import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
 
 const StatisticsPieChart = () => {
     const data = [
-        {name: 'Red', value: 640.46},
-        {name: 'Blue', value: 300.0},
-        {name: 'Green', value: 645.0},
-        {name: 'Yellow', value: 500.0},
+        {name: 'Losses', value: 640.46},
+        {name: 'Expenses', value: 300.0},
+        {name: 'Income', value: 645.0},
+        {name: 'Profit', value: 500.0},
     ];
 
     const COLORS = ['#ff6384', '#36a2eb', '#4bc0c0', '#ffce56'];
@@ -28,6 +28,19 @@ const StatisticsPieChart = () => {
                 </Pie>
             </PieChart>
         </ResponsiveContainer>
+
+        <div className="flex flex-wrap justify-center gap-4 mt-4">
+                {data.map((entry, index) => (
+                    <div key={entry.name} className="flex items-center gap-2">
+                        <span
+                            className="inline-block w-3 h-3 rounded-full"
+                            style={{ backgroundColor: COLORS[index % COLORS.length] }}
+                        ></span>
+                        <span className="text-sm text-white">{entry.name}:</span>
+                        <span className="text-sm text-[#b0b8d1]">${entry.value}</span>
+                    </div>
+                ))}
+            </div>
     </div>
   )
 }

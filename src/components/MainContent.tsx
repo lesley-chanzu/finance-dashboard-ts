@@ -30,8 +30,10 @@ const MainContent = () => {
       {/* CARDS ROW */}
 
       <CardsRow />
-      <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#121223] text-white rounded-xl shadow-md">
+      <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-[#121223] text-white rounded-xl shadow-md">
+        <div className="md:col-span-2">
       <MonthlyLineChart />
+      </div>
       <StatisticsPieChart />
       </div>
     </main>
