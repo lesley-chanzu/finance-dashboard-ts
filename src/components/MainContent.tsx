@@ -3,10 +3,11 @@ import { PiBellBold } from "react-icons/pi";
 import CardsRow from "./CardsRow";
 import MonthlyLineChart from "./MonthlyLineChart";
 import StatisticsPieChart from "./StatisticsPieChart";
+import LatestTransactions from "./LatestTransactions";
 
 const MainContent = () => {
   return (
-    <main className="flex flex-1 flex-col px-8 py-6 bg-[#181f36] text-white">
+    <main className="flex flex-1 flex-col px-8 py-6 bg-[#181f36] text-white h-full overflow-y-auto">
       {/* TOP BAR */}
       <div className="flex items-center mb-8">
         <div>
@@ -36,6 +37,7 @@ const MainContent = () => {
       </div>
       <StatisticsPieChart />
       </div>
+      <LatestTransactions />
     </main>
   );
 };
