@@ -3,16 +3,16 @@ import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YA
 const MonthlyLineChart = () => {
   const data = [
     { month: "Jan", income: 5000, expenses: 3000 },
-    { month: "Feb", income: 6000, expenses: 4000 },
+    { month: "Feb", income: 6000, expenses: 8000 },
     { month: "Mar", income: 7000, expenses: 3500 },
     { month: "Apr", income: 8000, expenses: 4500 },
     { month: "May", income: 9000, expenses: 5000 },
-    { month: "Jun", income: 10000, expenses: 5500 },
+    { month: "Jun", income: 7000, expenses: 5500 },
     { month: "Jul", income: 11000, expenses: 6000 },
-    { month: "Aug", income: 12000, expenses: 6500 },
+    { month: "Aug", income: 12000, expenses: 4500 },
     { month: "Sep", income: 13000, expenses: 7000 },
-    { month: "Oct", income: 14000, expenses: 7500 },
-    { month: "Nov", income: 15000, expenses: 8000 },
+    { month: "Oct", income: 19000, expenses: 7500 },
+    { month: "Nov", income: 16000, expenses: 8000 },
     { month: "Dec", income: 16000, expenses: 8500 },
   ];
 
